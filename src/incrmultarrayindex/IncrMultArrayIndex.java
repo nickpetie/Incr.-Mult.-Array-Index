@@ -28,13 +28,32 @@ public class IncrMultArrayIndex {
         
         int num = Integer.parseInt(userInput);
         
+        functions.setSubSetArray(num);      // Makes subSetArray
+        functions.fillArrayWithZeros();     // filles with zeros
+        
+        functions.setArrayWithNines(num);       // Makes ArrayWithNines
+        functions.fillArrayWithNines();    // fills with nines
+        
+        functions.printArray();
+        
+        /*
         int[] subSetArray = new int[num];
+        int[] compArray = new int[num];
         
         functions.fillArrayWithZeros(subSetArray);
+        functions.fillArrayWithNines(compArray);
         
         
         
+        boolean areTheyEqual = functions.compareTwoArray(subSetArray, compArray);
+        System.out.println(areTheyEqual);
         
+        // functions.incrArray(subSetArray);
+        
+        functions.printArray(subSetArray);
+        functions.printArray(compArray);
+        
+        */
     }
     
 }
