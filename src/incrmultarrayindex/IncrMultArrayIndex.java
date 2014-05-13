@@ -6,6 +6,8 @@
 
 package incrmultarrayindex;
 
+import java.util.Scanner;
+
 /**
  *
  * @author nicholaspeterson
@@ -17,6 +19,22 @@ public class IncrMultArrayIndex {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Functions functions = new Functions();
+        
+        System.out.println("Enter number of array indexs:");
+        Scanner str = new Scanner(System.in);
+        String userInput = str.next();
+        
+        int num = Integer.parseInt(userInput);
+        
+        int[] subSetArray = new int[num];
+        
+        functions.fillArrayWithZeros(subSetArray);
+        
+        
+        
+        
     }
     
 }
